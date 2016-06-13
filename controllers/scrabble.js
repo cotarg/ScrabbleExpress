@@ -9,6 +9,7 @@ var ScrabbleController = {
     var locals = {}
     var scrabble = new Scrabble()
     locals.points = scrabble.points
+    locals.title = "Scrabble Points Chart of Super Cool Points"
 
     res.render('chart', locals)
   }
