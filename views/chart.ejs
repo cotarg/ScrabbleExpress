@@ -5,7 +5,15 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
+    <img src="https://s-media-cache-ak0.pinimg.com/236x/99/40/c3/9940c3184f5dfac5593a104a1090c56f.jpg"><br>
+    <h1>Scrabble Puppy Says:</h1><br>
     <p>Welcome to <%= title %></p>
+
+    <ul>   
+      <% for (var i = 0; i < 26; i++) { %>
+        <li><%= Object.keys(points)[i] %> is worth <%= points[Object.keys(points)[i]] %> point(s).</li>
+      <% } %>
+    </ul>
+
   </body>
 </html>
